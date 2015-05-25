@@ -2,6 +2,7 @@ require "httparty"
 require "json"
 require "mustache"
 
+# get the data from the chute api
 response = HTTParty.get('http://api.getchute.com/v2/albums/azS0kgsx/assets')
 parsed_response = JSON.parse(response)
 
